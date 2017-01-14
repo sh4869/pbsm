@@ -11,7 +11,7 @@ import 'commands/uninstall.dart';
 class PBSMCommandRunner extends CommandRunner {
   String get version => "0.1.0";
 
-  PBSMCommandRunner() : super("ppm", "The pubspec maintenance tool.") {
+  PBSMCommandRunner() : super("pbsm", "The pubspec maintenance tool.") {
     argParser.addFlag("version", abbr: "v", help: "Print ppm version");
     addCommand(new InitCommand());
     addCommand(new InstallCommand());
