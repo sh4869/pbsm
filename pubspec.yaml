@@ -1,7 +1,7 @@
 author: "sh4869 <nobuk4869@gmail.com>"
 description: "A pubspec maintenance tool."
 name: "pbsm"
-version: "0.1.0"
+version: "0.1.1"
 homepage: https://github.com/sh4869/pbsm
 dependencies: 
   args: "^0.13.7"
@@ -11,3 +11,5 @@ dependencies:
   pubspec: "^0.0.5"
 environment:
   sdk: ">=1.8.0 <2.0.0"
+executables:
+  pbsm: pbsm
