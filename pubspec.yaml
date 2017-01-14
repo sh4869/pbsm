@@ -1,0 +1,13 @@
+author: "sh4869 <nobuk4869@gmail.com>"
+description: "A pubspec maintenance tool."
+name: "pbsm"
+version: "0.1.0"
+homepage: https://github.com/sh4869/pbsm
+dependencies: 
+  args: "^0.13.7"
+  prompt: "^0.1.7"
+  pub_client: "^1.0.8"
+  pub_semver: "^1.3.2"
+  pubspec: "^0.0.5"
+environment:
+  sdk: ">=1.8.0 <2.0.0"
