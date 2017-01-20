@@ -1,6 +1,6 @@
 # pbsm
 
-[![pub package](https://img.shields.io/pub/v/pbsm.svg)](https://pub.dartlang.org/packages/pbsm)
+[![pub package](https://img.shields.io/pub/v/pbsm.svg)](https://pub.dartlang.org/packages/pbsm) [![Build Status](https://travis-ci.org/sh4869/pbsm.svg?branch=master)](https://travis-ci.org/sh4869/pbsm)
 
 A pubspec maintenance tool. 
 
