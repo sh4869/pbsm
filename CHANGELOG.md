@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4
+
+* Handle `PackageNotFoundError`
+
 ## 0.1.3
 
 * Refactoring
