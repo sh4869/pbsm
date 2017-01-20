@@ -49,7 +49,12 @@ class InstallCommand extends Command {
     } else if (argResults["path"] != null) {
       reference = ReferenceHelper.getPathReference(argResults["path"]);
     } else {
-      reference = await ReferenceHelper.getHostedReference(package_name);
+      try {
+        reference = await ReferenceHelper.getHostedReference(package_name);
+      } on PackageNotFoundError catch (e) {
+        print(e.message);
+        exit(1);
+      }
     }
     print(ReferenceHelper.getDependencyInfo(reference, package_name));
 

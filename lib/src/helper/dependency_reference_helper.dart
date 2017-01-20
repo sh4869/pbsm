@@ -30,7 +30,7 @@ class ReferenceHelper {
     } on pub_client.HttpException catch (e) {
       switch (e.status) {
         case 404:
-          throw new PackageNotFoundError(name + "is not found.");
+          throw new PackageNotFoundError(name + " is not found.");
         default:
           throw e;
       }
