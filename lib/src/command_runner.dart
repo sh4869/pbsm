@@ -12,7 +12,7 @@ class PBSMCommandRunner extends CommandRunner {
   String get version => "0.1.0";
 
   PBSMCommandRunner() : super("pbsm", "The pubspec maintenance tool.") {
-    argParser.addFlag("version", abbr: "v", help: "Print ppm version");
+    argParser.addFlag("version", abbr: "v", help: "Print pbsm version");
     addCommand(new InitCommand());
     addCommand(new InstallCommand());
     addCommand(new UninstallCommand());
@@ -26,7 +26,9 @@ class PBSMCommandRunner extends CommandRunner {
       print(error.message);
       exit(1);
     }
-    await runCommand(option);
+    if (option != null) {
+      await runCommand(option);
+    }
   }
 
   Future runCommand(ArgResults option) async {
@@ -34,10 +36,12 @@ class PBSMCommandRunner extends CommandRunner {
       print('ppm version: ${version}');
       exit(0);
     }
+
     try {
-      super.runCommand(option);
-    } catch (e) {
+      await super.runCommand(option);
+    } on UsageException catch (e) {
       print(e);
+      exit(1);
     }
   }
 }
