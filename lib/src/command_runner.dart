@@ -9,7 +9,7 @@ import 'commands/install.dart';
 import 'commands/uninstall.dart';
 
 class PBSMCommandRunner extends CommandRunner {
-  String get version => "v0.1.5";
+  String get version => "v0.1.6";
 
   PBSMCommandRunner() : super("pbsm", "The pubspec maintenance tool.") {
     argParser.addFlag("version", abbr: "v", help: "Print pbsm version");

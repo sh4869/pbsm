@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.6
+
+* Fix typo
+
 ## 0.1.5
 
 * Fix `UsageException` Handling
